@@ -100,7 +100,7 @@ FilterVis.prototype.initializeVis = function () {
         numOfTicks = 15;
         tickSpan = Math.floor(dataValues.length / numOfTicks);
         // CITE: mbostock (July 31, 2012) on Nov 24th, 2015 
-        // SORUCE: http://bl.ocks.org/mbostock/3212294
+        // SORUCE: https://bl.ocks.org/mbostock/3212294
         ticks = self.iScale.domain()
             .filter(function(d, i) {
                 return !(i % tickSpan);
@@ -259,7 +259,7 @@ FilterVis.prototype.initializeVis = function () {
 
     /**
      * REFERENCE chrisbrich, Nov 30, 2012. Retrieved: Nov 19, 2015
-     * SOURCE: http://bl.ocks.org/chrisbrich/4173587
+     * SOURCE: https://bl.ocks.org/chrisbrich/4173587
      * Selects the data that is within selection.
      */
     brushMouseMove = function(args) {
@@ -427,7 +427,7 @@ FilterVis.prototype.sortData = function () {
 
     // create a lookup object
     // CITE: Aaron Digulla, Sep 9 2011 retrieved on Nov 10 2015
-    // SOURCE: http://stackoverflow.com/questions/7364150/find-object-by-id-in-array-of-javascript-objects
+    // SOURCE: https://stackoverflow.com/questions/7364150/find-object-by-id-in-array-of-javascript-objects
     for (i=0; i < self.displayData.length; i++) {
         lookup[self.displayData[i].value] = self.displayData[i];
     }

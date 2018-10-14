@@ -517,7 +517,7 @@ GraphVis.prototype.sortData = function () {
 
     // create a lookup object
     // CITE: Aaron Digulla, Sep 9 2011 retrieved on Nov 10 2015
-    // SOURCE: http://stackoverflow.com/questions/7364150/find-object-by-id-in-array-of-javascript-objects
+    // SOURCE: https://stackoverflow.com/questions/7364150/find-object-by-id-in-array-of-javascript-objects
     for (i=0; i < self.displayData.length; i++) {
         lookup[self.displayData[i].value] = self.displayData[i];
     }

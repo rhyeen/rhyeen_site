@@ -4,7 +4,7 @@
 
 
 /* Meyere's CSS reset
-    CITE: http://meyerweb.com/eric/tools/css/reset/ */
+    CITE: https://meyerweb.com/eric/tools/css/reset/ */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -312,18 +312,18 @@ footer {
 
 .add-graph {
     background-color: #79D841;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' stroke='#FFF'><g><line stroke-width='3' stroke-miterlimit='10' x1='15' y1='5' x2='15' y2='24.999'/></g><g><line stroke-width='3' stroke-miterlimit='10' x1='5' y1='15' x2='25' y2='15'/></g></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='https://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' stroke='#FFF'><g><line stroke-width='3' stroke-miterlimit='10' x1='15' y1='5' x2='15' y2='24.999'/></g><g><line stroke-width='3' stroke-miterlimit='10' x1='5' y1='15' x2='25' y2='15'/></g></svg>");
 }
 
 .copy-graph {
     background-color: #3861E5;
     
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' stroke='#FFF'><polyline fill='none' stroke-width='2' stroke-miterlimit='10' points='14.048 8.871 14.048 7 7.032 7 7.032 14.016 8.903 14.016 '/><rect x='11.709' y='11.677' fill='none' stroke-width='2' stroke-miterlimit='10' width='10.291' height='9.822'/></svg>");
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='https://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' stroke='#FFF'><polyline fill='none' stroke-width='2' stroke-miterlimit='10' points='14.048 8.871 14.048 7 7.032 7 7.032 14.016 8.903 14.016 '/><rect x='11.709' y='11.677' fill='none' stroke-width='2' stroke-miterlimit='10' width='10.291' height='9.822'/></svg>");
 }
 
 .delete-graph {
     background-color: #C6381C;   
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' fill='none' stroke='#FFF'><g><line stroke-width='3' stroke-miterlimit='10' x1='22.5' y1='7.5' x2='7.5' y2='22.499'/></g><g><line stroke-width='3' stroke-miterlimit='10' x1='7.5' y1='7.5' x2='22.5' y2='22.499'/></g></svg>");     
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='https://www.w3.org/2000/svg' version='1.1' x='0px' y='0px' width='30px' height='30px' viewBox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve' fill='none' stroke='#FFF'><g><line stroke-width='3' stroke-miterlimit='10' x1='22.5' y1='7.5' x2='7.5' y2='22.499'/></g><g><line stroke-width='3' stroke-miterlimit='10' x1='7.5' y1='7.5' x2='22.5' y2='22.499'/></g></svg>");     
 }
 
 .extra-page {

@@ -155,7 +155,7 @@ function createHead ($title, $description, $css_file, $js_files)
     
 	if ($js_files !== NULL  && !empty($js_files))
 	{
-		$return .= '<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>';
+		$return .= '<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>';
 		
 		foreach ($js_files as $js_file)
     		$return .= '<script type="text/javascript" src="'.$js_file.'"></script>';

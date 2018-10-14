@@ -3,8 +3,8 @@
 function getIcons ()
 {
 	$return = '<svg id="svg-source" height="0" version="1.1" 
-  xmlns="http://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%" 
-  xmlns:xlink="http://www.w3.org/1999/xlink">';
+  xmlns="https://www.w3.org/2000/svg" style="position:absolute; margin-left: -100%" 
+  xmlns:xlink="https://www.w3.org/1999/xlink">';
   	$return .= getEditIcon();
 	$return .= getDeleteIcon();
 	$return .= getAttentionIcon();
