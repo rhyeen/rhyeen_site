@@ -1,0 +1,293 @@
+<!doctype html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Boggle Game Information</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Look up the stats for any game played on Boggle.">
+    <meta name="author" content="Ryan Saunders and Wesley Gormley">
+    <style type="text/css">
+@charset "UTF-8";
+/* CSS Document */
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Gudea', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 30px;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+	outline:none;
+}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+a:hover {text-decoration: none;}
+body {
+	background-color:rgba(238,242,242,1);	
+}
+.page-container {
+	margin:20px;
+	padding: 20px;
+	width:900px;
+}
+h1 {
+	font-size:56px;
+	color:#666;
+	line-height:70px;
+}
+header {
+	margin-bottom: 40px;
+}
+h2 {
+	padding:10px;
+	padding-left:5px;
+	font-size:24px;
+	color:#0094ff;
+	padding-bottom:0px;	
+}
+
+.table {
+	display:table;
+	border:solid 3px #0094ff;
+	box-shadow:5px 5px 0px rgba(0,0,0,.2);
+	background-color:#FFF;
+	clear:both;
+}
+.row2 {
+	display:block;
+	height: 50px;
+}
+
+.row {
+	display:block;
+	height: 50px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;    
+	transition: all .3s ease-in-out;
+}
+
+.row:hover, .row:nth-child(odd):hover {
+	display:block;
+	height: 50px;
+	background-color:#555;
+	color:#FFF;
+}
+
+.row:nth-child(odd) {
+	background-color:#eee;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;    
+	transition: all .3s ease-in-out;
+}
+
+.column {
+	float:left;
+	width: 150px;
+	font-size: 14px;
+	text-align:center;
+	overflow:hidden;
+	padding:10px;
+}
+
+.column2 {
+	float:left;
+	width: 150px;
+	font-size: 14px;
+	text-align:center;
+	overflow:hidden;
+	padding:10px;
+	height:30px;
+}
+
+.column2:nth-child(3n-1) {
+	background-color:#FAE2E2;
+	color:#900;
+}
+
+.column2:nth-child(3) {
+	background-color:#D1D9DC;
+}
+
+.head {
+	display:block;
+	font-weight:700;
+	font-size: 16px;
+	background-color: #0094ff !important;
+	color:#FFF !important;
+}
+
+ul {
+	list-style:disc;
+}
+
+ul li:nth-child(odd) {
+	font-weight: 700;
+}
+
+ul li:nth-child(even) {
+	list-style:circle;
+	margin-left:20px;
+}
+li {
+	margin:5px;
+}
+.example {
+	color:#f00;
+}
+.playerName {
+	width: 200px;	
+}
+.board h4 {
+	font-size:46px;
+	width:75px;
+	height:52px;
+	padding-top: 23px;
+	margin:5px;
+	text-align:center;
+	float:left;
+	background-color:#fff;
+	box-shadow:5px 5px 0px rgba(0,0,0,.2),
+	5px 5px 15px rgba(0,0,0,.2);
+	color:#666;
+}
+.board {
+	width:340px;
+	margin-bottom: 40px;
+	height:340px;
+	float:left;	
+}
+.stats {
+	margin-left: 40px;
+	width:465px;	
+	float:left;
+	overflow:hidden;
+}
+.stats h3 {
+	font-size:36px;
+	line-height:50px;
+	white-space:nowrap;
+}
+.stats h3:nth-child(1) {
+	color:#0094ff !important;
+	margin-bottom:20px;
+	margin-left:0px !important;
+	font-size:36px !important;
+}
+.stats h3:nth-child(2n+1) {
+	margin-bottom:20px;
+	margin-left:40px;
+	font-size:30px;
+	color: #666;
+}
+
+</style>
+</head>
+<body>
+    <div class="page-container">
+        <!-- first part ^^^ -->
+        <header>
+            <h1>Boggle Game #12</h1>
+            <h2>Played 12/9/2013 4:00:53 PM</h2>
+        </header>
+        <section>
+        	<div class="board">
+                <h4>Y</h4><h4>L</h4><h4>T</h4><h4>V</h4>
+                <h4>O</h4><h4>N</h4><h4>I</h4><h4>E</h4>
+                <h4>B</h4><h4>A</h4><h4>G</h4><h4>R</h4>
+                <h4>L</h4><h4>H</h4><h4>M</h4><h4>O</h4>
+            </div>
+            <div class="stats">
+            	<h3>Time Limit: 60 seconds</h3>
+                <h3>P1: Ryan</h3>
+                <h3>P1's Score: 3</h3>
+                <h3>P2: Guest</h3>
+                <h3>P2's Score: 1</h3>
+            </div>
+            <div class="table">
+                <section class="row2">
+                    <div class="column2 p1Legal head">P1's Legal</div>
+                    <div class="column2 p1Illegal head">P1's Illegal</div>
+                    <div class="column2 repeatedWords head">Repeated words</div>
+                    <div class="column2 p2Legal head">P2's Legal</div>
+                    <div class="column2 pIllegal head">P2's Illegal</div>
+                </section>
+                <section class="row2">
+                    <div class="column2 p1Legal">Live</div>
+                    <div class="column2 p1Illegal">Bager</div>
+                    <div class="column2 repeatedWords">Tie</div>
+                    <div class="column2 p2Legal">Lit</div>
+                    <div class="column2 p2Illegal">Grom</div>
+                </section>
+                <section class="row2">
+                    <div class="column2 p1Legal">Gore</div>
+                    <div class="column2 p1Illegal"></div>
+                    <div class="column2 repeatedWords">Rom</div>
+                    <div class="column2 p2Legal">Liver</div>
+                    <div class="column2 p2Illegal"></div>
+                </section>
+                
+                <section class="row2">
+                    <div class="column2 p1Legal">More</div>
+                    <div class="column2 p1Illegal"></div>
+                    <div class="column2 repeatedWords"></div>
+                    <div class="column2 p2Legal"></div>
+                    <div class="column2 p2Illegal"></div>
+                </section>
+                
+                <section class="row2">
+                    <div class="column2 p1Legal">Give</div>
+                    <div class="column2 p1Illegal"></div>
+                    <div class="column2 repeatedWords"></div>
+                    <div class="column2 p2Legal"></div>
+                    <div class="column2 p2Illegal"></div>
+                </section>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+

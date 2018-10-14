@@ -1,0 +1,43 @@
+/* accordion */
+label {
+	display:block;
+}
+
+.ui-accordion-header {
+	cursor:pointer;
+	transition:all .3s;
+}
+
+.ui-accordion-content {
+	/* it jitters if I don't have this be positive */
+	padding-bottom:1px;
+}
+
+.form-hints {
+	font-size:14px;
+	text-align:left;
+	color:#999;
+}
+
+.ui-state-hover {
+}
+
+.ui-state-focus, .ui-state-active {
+
+}
+/* END accordion */
+
+/* icons */
+.icon {
+	width:20px;
+	height:20px;
+	fill:#FFF;	
+	transition:all 0.6s;
+	float:right;
+}
+
+.ui-accordion-header:hover .icon {
+	fill:#373737;
+}
+
+/* END icons */

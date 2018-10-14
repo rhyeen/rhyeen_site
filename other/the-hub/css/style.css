@@ -1,0 +1,520 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Gudea:400,700,400italic|Roboto+Condensed);
+/* CSS Document */
+
+/*
+paragraphs: font-family: 'Gudea', sans-serif;
+headers: font-family: 'Roboto Condensed', sans-serif;
+*/
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Gudea', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+	outline:none;
+}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+a:hover {text-decoration: none;}
+/* End CSS reset */
+
+/* Defaults */
+body {
+	background-color:#F3F3F3;	
+}
+
+h2 {
+	font-size:20px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+	font-size: 36px;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+	font-size:16px;
+	line-height:25px;	
+}
+/* End Defaults */
+
+/* Content */
+.content-box {
+	max-width:800px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background-color:#FFF;
+	padding: 20px;
+	padding-top: 100px;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+	margin-bottom: 30px;
+	text-align:center;	
+}
+
+.content-box h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.content-box p {
+	margin-bottom: 10px;
+	text-align:justify;	
+	/*color:#666;*/
+}
+
+.content-box a {
+	color:rgba(92,145,222,1);    
+    transition: all .3s ease-in-out;
+}
+.content-box a:hover {
+	color:rgba(169,64,44,1);
+}
+/* End Content */
+
+/* Info */
+.info-box {
+	max-width:350px;
+	margin: 0 auto;
+	padding: 20px;
+	padding-top: 100px;
+}
+
+.info-box h1 {
+	color: rgba(150,150,150,1);
+	/*text-shadow: -1px -1px 0px rgba(0,0,0,.2),
+	1px 1px 0px rgba(255,255,255,.5),
+	-1px -1px 1px rgba(0,0,0,.2);*/
+	
+	/* Thought out firefox fix, doesn't work.  The idea was to use webkit,
+	which firefox doesn't allow for the fancy stuff.  Didn't work.
+ 	-webkit-text-fill-color: transparent;
+ 	background: -o-linear-gradient(transparent, transparent);
+ 	-webkit-background-clip: text;
+	background-image: -webkit-linear-gradient(bottom, #565656 0%, #565656 100%);
+	background: -o-linear-gradient (bottom, #565656 0%, #565656 100%);
+	-webkit-background-clip: text;
+	*/
+	
+	/* Neat way to do inset text.  Too bad firefox doesn't support it.
+	COME ON FIREFOX, I thought you were cool...
+	background-color: #565656;
+  	color: transparent;
+  	text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+	background-clip: text;*/
+}
+
+.info-box h2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.info-box p {
+	margin-bottom: 10px;
+	font-size:14px;
+	text-align:justify;	
+	color:#666;
+	/*
+	background-color: #565656;
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+		  */
+	
+}
+
+.info-box a {
+	color:rgba(92,145,222,1);  
+    transition: all .3s ease-in-out;
+}
+.info-box a:hover {
+	color:rgba(169,64,44,1);
+}
+/* End Info */
+/* Nav bar */
+nav a {
+	text-transform:uppercase;
+	font-family: 'Roboto Condensed', sans-serif;
+	color:#000;
+}
+nav a:hover {
+	text-decoration: none; 
+}
+nav ul {
+    list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	/* Center at top */
+    text-align:center;
+}
+nav li {
+	margin:0;
+	padding: 1%;
+	font-size:20px;
+	/*font-family: 'Vollkorn', serif;	*/   
+    transition: all .3s ease-in-out;
+}
+nav li:hover {
+	background-color:#F3F3F3;
+}
+nav li.home-page:hover {
+	color:rgba(169,64,44,1);
+	border-bottom:solid 5px rgba(169,64,44,0.7);
+}
+nav li.about-page:hover {
+	color:rgba(89,182,106,1);
+	border-bottom:solid 5px rgba(89,182,106,0.7);
+}
+nav li.contact-page:hover {
+	color:rgba(92,145,222,1);
+	border-bottom:solid 5px rgba(92,145,222,0.7);
+}
+
+nav {
+	width:100%;
+	position:absolute;
+	z-index:1;
+	background-color:#FFF;
+	border-bottom:solid 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+}
+/* End Nav bar */
+
+/* Cards */
+.top-box {
+	position: relative;	
+}
+
+.cards-box {
+	position:relative;
+	padding-top: 100px;
+	width: 350px;
+	margin: 0 auto;
+}
+
+a.card section {
+	overflow:hidden;
+	
+	width: 310px;
+	height: 310px;
+	background-color:#FFF;
+	display:inline;
+	float:left;
+	margin-bottom: 40px;
+	/* Happening at lower level.  Don't want for displaying 1 column of cards, so margin
+	is set at 2 columns of cards 
+	margin-right: 20px;
+	margin-left: 20px; */
+	padding: 20px;
+	/* Border is only if it is decided not to use the background image, but an img instead.
+	border-bottom:solid 10px rgba(255,255,255,.95);
+	border-top:solid 10px rgba(255,255,255,.95);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	*/
+	border-top:solid 10px rgba(255,255,255,.95);
+	padding-top:10px;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);   
+    transition: all .3s ease-in-out;
+}
+a.card section:hover {
+	box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+}
+/* Example Card */
+.example-card {
+	width: 310px;
+	background-color:#FFF;
+	display:inline;
+	float:left;
+	margin-bottom: 20px;
+	/* Happening at lower level.  Don't want for displaying 1 column of cards, so margin
+	is set at 2 columns of cards 
+	margin-right: 20px;
+	margin-left: 20px; */
+	padding: 20px;
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.1);   
+    transition: all .3s ease-in-out;
+}
+.art-example {
+	border-top:solid 10px rgba(169,64,44,0.7);
+	padding-top:10px;
+}
+.design-example {
+	border-top:solid 10px rgba(89,182,106,0.7);
+	padding-top:10px;
+}
+.code-example {
+	border-top:solid 10px rgba(92,145,222,0.7);
+	padding-top:10px;
+}
+.important-example {
+	border-bottom:dashed 10px rgba(255,30,0,0.4);
+	padding-bottom:10px;
+}
+.example-card h2 {
+	text-align:center;	
+}
+
+/* End Example Card */
+
+/* Direct Links */
+.direct-link section {
+	box-shadow: inset 0px 0px 200px 0px rgba(255,255,255,0),
+	2px 2px 40px rgba(0, 0, 0, 0.1),
+	inset 0px 0px 20px -5px rgba(0, 0, 0, 0),
+	inset 0px 0px 1000px 300px rgba(0, 0, 0, 0),
+	inset -5px -5px 0px 5px rgba(255, 255, 255, .5),
+	inset 5px -5px 0px 5px rgba(255, 255, 255, .5),
+	inset 0px 0px 20px 10px rgba(255, 255, 255, .8) !important;   
+    transition: all .3s ease-in-out;
+}
+
+.direct-link section:hover {
+	box-shadow: inset 0px 0px 200px 10px rgba(255,255,255,1),
+	2px 2px 20px rgba(0, 0, 0, 0),
+	inset 2px 4px 10px 0px rgba(0, 0, 0, .8),
+	inset 0px 0px 1000px 300px rgba(0, 0, 0, .2),
+	inset -3px -3px 0px 3px rgba(255, 255, 255, .5),
+	inset 3px -3px 0px 3px rgba(255, 255, 255, .5),
+	inset 0px 0px 16px 8px rgba(255, 255, 255, .8)  !important;
+
+}
+
+.direct-link section > .external {
+	/*display:none;*/
+	position:absolute;
+	z-index:1;
+	margin-left:65px;
+	margin-top:145px;
+	font-size:24px;
+	color:#FFF;
+	letter-spacing:2px;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform:uppercase;
+	text-shadow:1px 1px 7px rgba(0,0,0,.5);    
+    transition: all .2s ease-in-out;
+	opacity:0;
+}
+
+.direct-link section:hover > .external {
+	/*display:inline;*/
+	opacity:1;
+}
+.direct-link section > img {
+	/*display:inline;*/
+	opacity:1;   
+    transition: all .3s ease-in-out;
+}
+.direct-link section:hover > img {
+	/*display:inline;*/
+	opacity:.5;
+}
+/* End Direct Links */
+
+/* Card Types */
+
+a.card section.important {
+	border-bottom:dashed 10px rgba(255,30,0,0.4);
+	padding-bottom:10px;
+}
+a.card section.important:hover {
+	border-bottom:dashed 10px rgba(255,30,0,.3);
+	padding-bottom:10px;
+}
+
+a.card section.post-card {
+	border-top:solid 10px rgba(0,0,0,0.3);
+	padding-top:10px;
+}
+a.card section.art-card {
+	border-top:solid 10px rgba(169,64,44,0.7);
+	padding-top:10px;
+}
+a.card section.design-card {
+	border-top:solid 10px rgba(89,182,106,0.7);
+	padding-top:10px;
+}
+a.card section.code-card {
+	border-top:solid 10px rgba(92,145,222,0.7);
+	padding-top:10px;
+}
+
+a.card section.post-card:hover {
+	border-top:solid 10px rgba(0,0,0,0.2);
+	padding-top:10px;
+}
+a.card section.art-card:hover {
+	border-top:solid 10px rgba(169,64,44,.5);
+	padding-top:10px;
+}
+a.card section.design-card:hover {
+	border-top:solid 10px rgba(89,182,106,.5);
+	padding-top:10px;
+}
+a.card section.code-card:hover {
+	border-top:solid 10px rgba(92,145,222,.5);
+	padding-top:10px;
+}
+/* End Card Types */
+
+a.card section h2 {
+	padding: 5px;
+	margin-bottom:10px;
+	color:#000;
+	text-align:center;
+}
+
+a.card section p {
+	color:#333;
+	text-shadow:1px 1px 1px rgba(255,255,255,.5),
+	0px 0px 5px rgba(255,255,255,.7),
+	0px 0px 5px rgba(255,255,255,1);
+	text-align:justify;	
+}
+
+a.card section img {
+	max-height:270px;
+	max-width:310px;
+}
+/* End Cards */
+
+footer {
+	clear:both;
+	margin:auto 0;
+	opacity:.6;
+}
+footer p {
+	font-size:11px;
+	text-align:center;
+	color: #666;
+	/*
+		background-color: #565656;
+
+  color: transparent;
+  text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;*/
+}
+
+/* Large screens */
+@media only screen 
+and (min-width : 400px) {
+	a.card section {
+	margin-right: 0px;
+	margin-left: 0px;
+	}
+	nav li {
+		display:inline;
+		padding:20px;
+		padding-bottom:18px;
+	}
+	nav ul {
+		padding:20px;
+		/* li is overflowing */
+		/*overflow:hidden;*/
+	}
+}
+
+/* Tablet */
+/* 2 columns of cards */
+@media only screen 
+and (min-width : 780px) {
+	a.card section {
+	margin-right: 20px;
+	margin-left: 20px;
+	}
+	.cards-box {
+		width: 780px;
+	}
+}
+
+/* Large screens */
+/* 3 columns of cards */
+@media only screen 
+and (min-width : 1170px) {
+	.cards-box {
+		width: 1170px;
+	}
+}
+
+/* Large screens */
+/* 4 columns of cards */
+@media only screen 
+and (min-width : 1560px) {
+	.cards-box {
+		width: 1560px;
+	}
+}
+
+/* Large screens */
+/* 5 columns of cards */
+@media only screen 
+and (min-width : 1950px) {
+	.cards-box {
+		width: 1950px;
+	}
+}
+
+/* Large screens */
+/* 6 columns of cards */
+@media only screen 
+and (min-width : 2340px) {
+	.cards-box {
+		width: 2340px;
+	}
+}
+
+

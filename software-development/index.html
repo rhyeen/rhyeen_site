@@ -1,0 +1,84 @@
+<!doctype html> 
+<html>
+<head>
+    <style type="text/css"></style>
+	<meta charset="UTF-8">
+    <title>Ryan Saunders' Software Development Portfolio</title>
+    <!-- So devices see it the way I expect them to -->
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Ryan has experience with languages such as Java, C#, Python, C, and C++.">
+    <meta name="author" content="Ryan Saunders">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-75013605-2', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</head>
+<body>
+	<div class="page-container">
+		<nav class="main-nav">
+			<a href="../index.html"><h1>Ryan Saunders</h1></a>
+			<ul>
+				<a href="../resume.pdf" class="resume-section"><li>Resume <span>[PDF]</span></li></a>
+				<li class="sub-section">Portfolios:</li>
+				<a href="../software-development/index.html" class="sub-section-link"><li>Software Development</li></a>
+				<li class="sub-section-gap">|</li>
+				<a href="../web-development/index.html" class="sub-section-link"><li>Web Development and Design</li></a>
+				<li class="sub-section-gap">|</li>
+				<a href="../art-design/index.html" class="sub-section-link"><li>Art and Design</li></a>
+			</ul>
+		</nav>
+
+        <section class="main-container">
+        	<h2>Software Development</h2>
+            <p>Below is a selected list of personal software engineering projects.  To view the source code of personal projects, there is a link to GitHub repositories in each project description.  For viewing source code of school projects, please contact me through my email at <strong>contact.ryan.saunders&#64;gmail.com</strong>.</p>
+            <section class="main-list">
+            	<section>
+	            	<h3>P2P Offloading on Mobile Network</h3>
+					<h4><span class="item-date">2015</span>|<span class="item-language">Written in Python</span><a class="item-link" target="_blank" href="http://dl.acm.org/authorize?N16299">View Paper</a></h4>
+					<p>I worked with the University of Utah's Flux Research group to improve latency of P2P services over the mobile network.  We worked on an emulated 4G/LTE network with a physical eNodeB (celltower).  Traffic flow was regulated using OpenFlow.  Testing on separate smart phones, we were able to significantly improve the latency between them.  A draft paper that was prepared for a mobile research conference can be found in the link above.</p>
+				</section>
+            	<section>
+	            	<h3>Android App of a Virtual Boardgame</h3>
+					<h4><span class="item-date">2015</span>|<span class="item-language">Written in Java</span><a class="item-link" target="_blank" href="https://github.com/rhyeen/CardRogueAndroid">View on GitHub</a></h4>
+					<p>As part of a Kickstarter boardgame campaign, I created a virtual boardgame as an Android app that followed the same ruleset and used similar assets.  The game followed the MVC pattern and made use of the Android views and layouts.</p>
+				</section>
+            	<section>
+	            	<h3>Cosmonautics - A Multiplayer 2D Space Shooter</h3>
+					<h4><span class="item-date">2014</span>|<span class="item-language">Written in C#</span><a class="item-link" target="_blank" href="https://github.com/rhyeen/Cosmonautics">View on GitHub</a></h4>
+					<p>I decided to develop this game for two main purposes: I wanted to learn how to deal with graphics outside of GUIs, and I wanted to determine how to test a network connection with an intense and consistent data transfer rate. Cosmonautics uses the OpenGL API for graphics processing. The graphical elements were drawn in Adobe Illustrator and were manipulated in-game under simulated physics. This included a custom collision detection algorithm and particle simulation. The networking involves a TCP connection to a server, which communicates between all clients. Currently, I was attempting to convert to a hybrid TCP/UDP connection for a more fluid gameplay before I moved onto other projects.</p>
+				</section>
+            	<section>
+	            	<h3>Concurrent Spreadsheet</h3>
+					<h4><span class="item-date">2014</span>|<span class="item-language">Written in C# and C++</span><a class="item-link" target="_blank" href="../other/spreadsheet_design_document.pdf">Download Design Document</a></h4>
+					<p>This was a group project completed in collaboration with two other programmers. The goal was to create a spreadsheet application that could allow for multiple users to edit a spreadsheet concurrently; much like the functionality of Google Drive's Spreadsheet. The spreadsheets are stored on a server, which also allows for the spreadsheets to be opened and edited by simultaneous users. As a class project, each group had to propose a solution in a design document, which the class would vote on to use.</p>
+				</section>
+				<section>
+	            	<h3>Secure Text Transfer</h3>
+					<h4><span class="item-date">2014</span>|<span class="item-language">Written in Java</span></h4>
+					<p>A client-server communication protocol that authenticates, encrypts, and determines the integrity of a message. A double encryption method is used for fast and secure data transfer. Private and public key pairings are generated using RSA, and symmetric keys are generated using 3DES. Message digests are created using SHA-1 for message integrity checks. Finally, a simulated Certificate Authority is used for authentication of client to server.</p>
+				</section>
+				<section>
+	            	<h3>Ball Animation added to FFMPEG</h3>
+					<h4><span class="item-date">2014</span>|<span class="item-language">Written in C and C++</span><a class="item-link" target="_blank" href="../other/bouncer_design_document.pdf">Download Design Document</a></h4>
+					<p>This project was about creating a program that uses the ffmpeg libraries to composite a sequence of animated images into a movie format. Ffmpeg libraries were to include a new image-animation format. A stand-alone application was also created for adding a ball animation to a user chosen background image.</p>
+				</section>
+				<section>
+	            	<h3>HTTP Web Proxy</h3>
+					<h4><span class="item-date">2014</span>|<span class="item-language">Written in Java</span></h4>
+					<p>A standard web proxy that observed all incoming and outgoing HTTP requests and responses through the Firefox browser. The proxy could easily be converted to blocking certain traffic.</p>
+				</section>
+				<section>
+	            	<h3>Boggle Game with Server</h3>
+					<h4><span class="item-date">2013</span>|<span class="item-language">Written in C# and HTML</span><a class="item-link" target="_blank" href="../other/boggle/game.html">View Example Stat Page</a></h4>
+					<p>A multiplayer Boggle game that stores game statistics on a SQL database. Two players are paired together and play a randomized Boggle game on a standard Boggle board. An HTML page can be accessed from the server-side IP address on a browser to look up game and player stats.</p>
+				</section>
+			</section>
+        </section>
+    </div>
+</body>
+</html>

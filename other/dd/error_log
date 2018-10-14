@@ -1,0 +1,14 @@
+[20-Apr-2015 08:39:41 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:39:41 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:52:52 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:52:52 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:53:15 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:53:15 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:53:52 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:53:52 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:54:27 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:54:27 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:54:33 America/Denver] PHP Notice:  Undefined variable: database in /home2/realiue2/public_html/dd/index.php on line 14
+[20-Apr-2015 08:54:33 America/Denver] PHP Fatal error:  Call to a member function prepare() on a non-object in /home2/realiue2/public_html/dd/index.php on line 14
+[23-Apr-2015 23:38:40 America/Denver] PHP Fatal error:  Cannot redeclare createTextareaInput() (previously declared in /home2/realiue2/public_html/dd/php/helper.php:40) in /home2/realiue2/public_html/dd/php/helper.php on line 69
+[23-Apr-2015 23:39:08 America/Denver] PHP Fatal error:  Cannot redeclare createTextareaInput() (previously declared in /home2/realiue2/public_html/dd/php/helper.php:40) in /home2/realiue2/public_html/dd/php/helper.php on line 69

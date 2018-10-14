@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/css?family=Gruppo|Geo);
+@import url(http://fonts.googleapis.com/css?family=Play);
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+    text-decoration:none;
+	outline:none;
+}
+a:link {text-decoration: none}
+a:visited {text-decoration: none}
+a:active {text-decoration: none}
+a:hover {text-decoration: none;}
+/* End CSS reset */
+
+/* Defaults */
+/* for h1 and h2, see Header */
+body {
+	background-color:#000;
+}
+
+.page-container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+h1, h2, h4, p {
+	color:#FFF;
+	text-align:center;
+	text-shadow:0px 0px 8px rgba(255,255,255,1);	
+}
+
+p {
+	text-shadow:0px 0px 10px rgba(0,0,0,1);	
+	font-family: 'Play', sans-serif;
+	font-size:14px;
+	line-height:24px;
+}
+
+h1 {
+	font-size: 50px;
+	margin-bottom:10px;
+	font-family: 'Geo', sans-serif;
+	text-transform:uppercase;	
+}
+
+h4 {
+	font-size:24px;
+	color:#F30;
+	text-shadow:0px 0px 13px rgba(51,204,255,1);	
+	font-family: 'Gruppo', cursive;	
+}
+footer {
+	margin-top:-60px;
+	margin-bottom: 20px;
+	text-align:center;
+	font-size:14px;
+	color:#3A6683;
+	font-family: 'Play', sans-serif;
+}
+
+.planet h2 {
+	margin-top: 0px;
+	text-transform:uppercase;
+	font-size:20px;
+	font-family: 'Gruppo', cursive;
+	opacity:0;
+	-webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.planet-ring {
+}
+
+.planet {
+	margin: 100px;
+}
+
+.planet img {
+	border-radius: 1000px;
+	margin:0 auto;
+	display:block;
+}
+
+.planet a {
+	display:block;
+}
+
+.planet a:hover + h2 {
+	opacity:1;
+	margin-top:20px;	
+}
+
+.sun img {
+	box-shadow:0 0 200px rgba(255,233,116,1);
+	width: 80%;
+}
+
+.mercury img {
+	width: 5%;	
+}
+
+.venus img {
+	width: 10%;	
+}
+
+.earth img {
+	box-shadow:0 0 20px rgba(102,204,255,1);
+	width:10%;
+}
+
+.mars img {
+	width: 7%;	
+}
+
+.jupiter img {
+	width: 50%;	
+}
+
+.saturn img {
+	width: 40%;	
+}
+
+.uranus img {
+	width: 25%;	
+}
+
+.neptune img {
+	width: 25%;	
+}
+.planet-page img {
+	margin-bottom: 40px;
+	margin-top: -40px;
+	width: 100%;	
+}
+/* Large screens */
+@media only screen 
+and (min-width : 700px) {
+.planet-page img {
+	display:none;	
+}
+.planet-page {
+	margin-top: 80px;	
+}
+.planet-page .planet {
+	border-radius: 1000px;
+	width: 400px;
+	height: 400px;
+	margin:0 auto;
+	padding: 100px;
+	display:table;
+}
+
+.planet-page .planet p {
+	display: table-cell;
+	vertical-align:middle;
+	text-align:justify;	
+}
+
+.planet-page .sun {
+	background-image:url(../images/sun-large.jpg);	
+	box-shadow:0 0 200px rgba(255,233,116,1);
+}
+.planet-page .mercury {
+	background-image:url(../images/mercury-large.jpg);
+}
+.planet-page .venus {
+	background-image:url(../images/venus-large.jpg);
+}
+.planet-page .earth {
+	background-image:url(../images/earth-large.jpg);
+	box-shadow:0 0 20px rgba(102,204,255,1);
+}
+.planet-page .mars {
+	background-image:url(../images/mars-large.jpg);
+}
+.planet-page .jupiter {
+	background-image:url(../images/jupiter-large.jpg);
+}
+.planet-page .saturn {
+	background-image:url(../images/saturn-large.jpg);
+}
+.planet-page .uranus {
+	background-image:url(../images/uranus-large.jpg);
+}
+.planet-page .neptune {
+	background-image:url(../images/neptune-large.jpg);
+}
+footer {
+	margin-top: 80px;
+}
+}
