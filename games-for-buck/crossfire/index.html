@@ -1,0 +1,156 @@
+<!doctype html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ryan Saunders">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75013605-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body>
+	<div class="page-container">
+		<section class="top-box">
+            <nav class="main-nav">
+                <ul>
+                    <a class="nav" href="../index.html"><li class="home-page">Home</li></a>
+                    <a class="nav" href="../games/index.html"><li class="alchemy-page">Games</li></a>
+                    <a class="nav" href="../forum/index.html"><li class="forum-page">Forum</li></a>
+                    <a class="nav" href="../other/index.html"><li class="media-page">Other</li></a>
+                </ul>
+            </nav>
+        </section>
+        <section class="content-box">
+        	<header>
+        		<img src="images/title.png" class="graphic-mid" style="width:60%">
+        		<!-- <h1>Crossfire</h1> -->
+                <h2>Rulebook v1.0</h2>
+            </header>
+            <section>
+                <h3>About the game</h3>
+                <p>Crossfire is a territory control game that only requires two decks of standard poker cards and a table.  The game involves two players starting at either end of the table making his way towards (and through) his opponent.  There is a high level of strategy and tactics to obtain victory.  A game session may take anywhere from 10 minutes to 45 minutes, depending on the aggressiveness of the players.</p>
+                
+				<h2>Two Player Crossfire</h2>
+				<img class="graphic-right" src="images/2p_setup.png" style="width:50%"><h4>Setup</h4>
+				<p>Each player has a standard 52 card deck plus 2 or 3 Jokers (each player should have equal Jokers).  Make sure you can distinguish the two decks (i.e. decks of different color backs).</p>
+				<p>One player will play all of his cards vertically, while the other will play all of his cards horizontally. In this game, Player 1 is playing vertically, while Player 2 is playing horizontally.</p>
+				<ol>
+					<li>Shuffle each deck separately.  Players will only ever draw from his own deck.</li>
+					<li>The players should place the cards as shown in the image.  It does not matter the order, as long as the cards are not rearranged once they are set down.</li>
+					<li>If a player has 2 or less numbered (Ace through 10) base nodes or has a Joker as a base node, they are allowed (and strongly encouraged) to put all base nodes back in the deck, reshuffle and place down 5 new base nodes.  They may repeat this step as many times as needed.</li>
+					<li>To start the game, each player draws a card.  Whoever draws higher, goes first (Ace being the lowest).  If two cards of the same rank are drawn, draw again.  Discard those cards.</li>
+					<li>Both players draw 3 cards.</li>
+				</ol>
+
+				<h4>Turn Sequence</h4>
+				<ol>
+					<li>The starting player (for example, Player 1) draws a card.  On a player’s turn, he will always have 4 cards in hand.  At the end of his turn, he will always have 3 cards in hand.</li>
+					<li>Player 1 lays down one of his cards vertically (horizontally for Player 2) and face up.  There are rules about how a player may lay down a card:</li>
+					<ul>
+						<li>A player may typically only play a card that is directly adjacent to (up, down, left, or right) another one of his <b>powered</b> cards (powered and dead cards are explained later).</li>
+						<li>A player cannot play a card on top of another card unless he is <b>attacking</b> or <b>defending</b> that card, or he is building a <b>tower</b> (explained later).</li>
+						<li>A player must play a card in the play area (the 5 x 9 grid shown above).</li>
+					</ul>
+					<li>If Player 1 does not lay down a card, he discards one of his cards.  A player does not need to play a card, even if he is capable of doing so.</li>
+					<li>It is Player 2’s turn.</li>
+				</ol>
+
+				<h3>Nodes</h3>
+				<img src="images/example_nodes.png" class="graphic-right">
+				<p class="page-break-after-print">In Crossfire, cards are referred to as <b>nodes</b>.  To continue towards the opponent, a player must have a chain of <b>powered nodes</b>. To seize control over an already placed node, a player must attack and win that node.  The player wins the game when he seizes control of one of his opponent’s <b>base nodes</b>.</p>
+
+				<h4>Powered Node</h4>
+				<p>To continue forward, a player must create powered nodes.  <b>Powered nodes</b> are two nodes that are adjacent to each other that sum to 10.  A 10 is also a powered node without a pair.</p>
+				<img src="images/valid_placement.png" class="graphic-right"><p>Two powered nodes cannot share the same paired node; however, powering can be switched as needed by that player.  A powered node must be linked back to a base node, or it has no power.</p>
+				<p>From a powered node:</p>
+				<ul>
+					<li>A player may lay down an adjacent node from his hand (dead node, or a 10)</li>
+					<li>A player may attack or defend adjacent nodes</li>
+				</ul>
+				<img src="images/valid_placement2.png" class="graphic-right"><h4>Dead Node</h4>
+				<p>A <b>dead node</b> is any node that does not pair with another node to sum to 10 (excluding a 10), and any node that is not linked back to a base node.</p>
+				<p>From a dead node:</p>
+				<ul>
+					<li>A player can only lay down an adjacent node from his hand that would pair with the dead node to a power of 10 (thus making the dead node and recently laid node powered nodes)</li>
+					<li>A player cannot attack or defend adjacent nodes from a dead node</li>
+				</ul>
+				<img src="images/invalid_placement.png" class="graphic-right"><p >Royals (Jack, Queen, or King) are dead nodes and cannot be powered.</p>
+
+				<h4>Base Nodes</h4>
+				<p>Each player has 5 <b>base nodes</b>: they are the starting 5 cards placed in front of them.  Powered nodes must be linked to a base node to be powered, otherwise they are treated as dead nodes.</p>  
+				<p>From a base node:</p>
+				<ul class="page-break-after-print">
+					<li>A player may lay down a node from his hand that would pair with the base node to a power of 10. He must lay it in the spot immediately above that base node toward the enemy's base</li>  
+					<li>A player may attack or defend adjacent nodes</li>
+				</ul>
+				<p>On his beginning turn, a player should place a node from his hand up from a base node (toward the enemy) to create a powered node chain.  A base node of 10 is already powered.  A base node of a royal (Jack, Queen, or King) cannot become a powered node.</p>
+
+				<h4>Support Nodes</h4>
+				<p>Below the line of base nodes, a player may place a support node.  A <b>support node</b> must be a numbered node, it must be directly below a numbered base node, and the sum of the support node plus that base node cannot exceed 10.  Once played, that base node may either be its original number, or the sum of its number plus the support node.</p>
+
+				<h4>Attacking and Defending Nodes</h4>
+				<p>When an opponent node is adjacent to a powered node of the player, the player may attack the opposing node.  Attacking and defending is a contest of nodes’ strength.  The strength of a node is determined by the rank of the card.  Ace= 1, Jack = 11, Queen = 12, King = 13.</p>
+				<p>To <b>attack</b> a node, the player lays down one of his nodes from his hand on top of the opposing node (in the player’s given orientation: either vertically or horizontally).  The node is now part of a <b>contesting pile</b>, as the attacker is contesting to seize that node.  During this phase, the node continues to power as normal.  It is now the opponent’s turn.  If the opponent ignores the attack, on the player’s next turn, he will win the pile.  The opponent may also <b>defend</b> the node by laying down a node from his hand of greater strength than the attacking node.  The attacking player may then lay down another node of equal or greater strength than the defending node to contest again.  This contest continues until one player does not play on the contesting pile for his turn, and the other player wins the pile.</p>
+
+				<h4>Seized Pile</h4>
+				<p>When a player wins a pile, it becomes a seized pile.  A <b>seized pile</b> has no power, and nodes cannot be played off of the pile; however, the pile has a defense strength of the highest node strength in the pile (the top card). On his turn, a player who owns a seized pile has several options:</p>
+				<ul>
+					<li>He may have the seized pile remain until he decides to resolve it</li>
+					<li>He may resolve the pile by removing all cards from the pile, and replacing them with one of the cards from his hand (as long as the player has an adjacent powered node)</li>
+					<li>He may resolve the pile by removing all but one card (or a 10 and a royal if he is <b>towering</b>)</li>
+				</ul>
+				<p class="page-break-after-print">When a seized pile is resolved, the node that has replaced the pile acts as a <b>powered node</b> or <b>dead node</b>, as would normally be the case.</p>
+
+				<h4>Neutral Nodes</h4>
+				<p>The 8 face down cards on the play area are <b>neutral nodes</b>.  A neutral node’s strength is determined by the hidden rank of the card.  This node can be seized by either player.  A player may “probe” a neutral node by attacking it.  When a node is probed, reveal the card’s strength to both players.  If the player wins the attack, treat the <b>seized pile</b> as normal.  If the player loses the attack, flip the neutral node face down again, and keep the <b>contesting pile</b> on top of the neutral node.  Either player may look at an already revealed neutral node whenever as a reminder of its strength.</p>
+				<p>If both players are contesting for a single neutral node, the player who ends the contest with the highest attack (and an attack higher than the neutral node’s strength), wins the contest.</p>
+
+				<h4>Towers</h4>
+				<p><b>Towering</b> a royal is a good strategy for establishing a strong advantage point.  To tower a <b>seized pile</b>, there must be at least a royal and a 10 within the pile.  On his turn, the player who owns the seized pile may remove all cards other than a royal and the 10, which together form a tower.  A <b>tower</b> has the power of a 10, but the strength of the towered royal.</p>
+
+				<h4>Jokers</h4>
+				<p>Jokers have separate properties in hand and in the play area:</p>
+				<ul>
+					<li>In the play area, a Joker can be used as a wild node.  A Joker will be any <b>single</b> power number that is needed for that player to chain the nodes.  However, anything can win a Joker’s defense, as the Joker’s strength is 0 (an attacking Joker can also win a defending Joker).</li>
+					<li>In the player’s hand, a Joker can replace any single node that the player owns that isn’t in a <b>seized pile</b>, <b>contested pile</b>, or <b>tower</b>.  To replace a node, the player replaces the node with the Joker; the player will still have 4 cards in his hand, and can therefore play another card that turn.</li>
+				</ul>
+
+				<h4>End Goal</h4>
+				<p>To win the game, a player must win an attack on one of his opponent’s base nodes.</p>
+				<p class="page-break-after-print">If a player runs out of cards to draw, the game is over and results in a tie.</p>
+
+
+
+				<h2>Four Player Crossfire</h2>
+				<p>There is a four player variation of this game that pits two teams against each other in a chaotic battlefield.</p>
+				<p>The same rules apply as in Crossfire, except a change in the play area and victory conditions.  The play goes clockwise, starting with whoever draws the highest card.</p>
+				<img src="images/4p_setup.png" class="graphic-mid" style="width:60%">
+				<h4>Play Area</h4>
+				<p>Team members sit across from each other and must work together to obtain victory.  Team members must play from their own base nodes.  When a node from one team member connects to a node from the other team member, each team member may play anywhere on the connected node chain.</p>
+
+				<h4>End Goal</h4>
+				<p>The first team with 6 victory points wins.  There are several ways to obtain victory points:</p>
+				<ul>
+					<li>1 point for every opponent base node seized.</li>
+					<li>2 points if a team has at least one connected node chain (a base node from each team member is somehow connected). Even if there is more than one connected node chain, only 2 points are awarded.</li>
+					<li>2 points for whichever team has control over the middle node.</li>
+				</ul>
+				<p>When an opponent base node is seized, there is now an ally and opponent base node in the same base node line.  The ally and opponent base nodes may not directly attack each other.  If the opponent seizes control over his lost node, the ally team will lose their 1 point.</p>
+				<p class="page-break-after-print">If a player depletes his draw pile, the team with the most amount of victory points wins (it is a tie if the amount is equal).</p>
+
+				<h2>Crossfire Ultimate</h2>
+				<p>There is an epic version of the four player game.  The game can last anywhere from an hour to a few hours.  It also requires a fairly large table, and 8 decks of cards (shuffle 2 decks together per person).  We highly recommend this version for avid players.</p>
+				<p>The play area is massive (see below), but the rules are the same as the above four player version.</p>
+				<img src="images/ultimate_setup.png" class="graphic-mid">
+			</section>
+		</section>
+	</div>
+</body>

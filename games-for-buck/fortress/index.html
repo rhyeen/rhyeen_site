@@ -1,0 +1,106 @@
+<!doctype html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ryan Saunders">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-75013605-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+</head>
+<body>
+	<div class="page-container">
+		<section class="top-box">
+            <nav class="main-nav">
+                <ul>
+                    <a class="nav" href="../index.html"><li class="home-page">Home</li></a>
+                    <a class="nav" href="../games/index.html"><li class="alchemy-page">Games</li></a>
+                    <a class="nav" href="../forum/index.html"><li class="forum-page">Forum</li></a>
+                    <a class="nav" href="../other/index.html"><li class="media-page">Other</li></a>
+                </ul>
+            </nav>
+        </section>
+        <section class="content-box">
+        	<header>
+        		<!-- <h1>Fortress</h1> -->
+        		<img src="images/title.png" class="graphic-mid" style="width:60%">
+                <h2>Rulebook v2.0</h2>
+            </header>
+            <section>
+                <h3>About the game</h3>
+                <p>Fortress is a game in rounds for 2 to 5 players.  The concept is to protect royal cards in your hand while trying to capture your opponent’s royals.  The game can be played without a table, and only requires a single standard poker deck of cards (removing the Jokers).  A game typically lasts 10 to 45 minutes, depending on the scoring used.</p>
+                
+				<h4>Setup</h4>
+				<img src="images/setup.png" class="graphic-right"><p>Draw cards from the deck.  He who draws the highest card (Ace being the lowest) decides who goes first.</p>
+
+				<h3>Fortifying Phase</h3>
+				<p>Shuffle the cards to begin (unless it is <b>the Even Round</b> with two players).  Each player is dealt two cards (cards should be kept secret).  Next, the first player draws a card.  He may either place the card left of the left-most card or right of the right-most card in his hand.  In other words, any card drawn must be placed on either end of his hand.  The play continues clockwise, as the next player draws a card.  Continue to draw cards until each player has 10 cards.</p>
+				<p>The goal is to have as many royal cards in the center of the hand.  It is also beneficial to have equally ranked cards next to each other (such as two Aces next to each other) in the player's hand.</p>
+				<p>After the 10th card is drawn, the players may move one card to any position in his hand.</p>
+				<img src="images/fortify.png" class="graphic-mid" style="width:40%">
+				<h3>Attacking Phase</h3>
+				<img src="images/attack.png" class="graphic-right"><p>Once the fortifying phase is complete, players begin the attacking phase.</p>
+				
+				<p>For his turn, a player attacks (just once per turn) the person on his left, with the starting player beginning the attacking phase.  To attack, a player removes any single card from his hand, or if two or more cards of an equal rank are directly next to each other, he may attack with all or some of those cards.</p>
+				<p>With his attacking card(s), the player physically taps on the left or right side of the opponent’s hand of cards with the attacking card(s).  The attacking card(s) must be revealed to the opponent. The attacking card(s) is contested against the outer card on the left or right --depending on which side was attacked. This is the defending card. If one or more cards of equal rank to the outer card are directly next to the outer card, they together make the defending cards.</p>
+				<p>If the attacking card(s) breaks the defending card(s), both the attacking and defending cards are discarded.</p>
+				<img src="images/defend.png" class="graphic-right">
+				<p class="page-break-after-print">If the defending card(s) blocks the attacking card(s), the defender flips over the defending card(s) that were necessary to block the attack, revealing them to the attacker (and anyone else playing).  The attacking card(s) is then discarded, and the defending card(s) remains revealed.</p>
+
+				<h4>Aces</h4>
+				<p>If a player has an Ace in his hand, on his turn he may discard the Ace, draw a new card and place it left of the left-most card or right of the right-most card.  This is his turn.</p>
+
+				<h4>Passing</h4>
+				<p>A player may pass his attacking phase, which will skip this turn of the player. However, if all players pass, the round is over and points are tallied.</p>
+
+				<h4>Calling Done</h4>
+				<p>At the beginning of his turn and when a player has one or zero number ranked cards in his hand (i.e. one or zero cards other than royals), he may call “done”.  This will immediately end the round, and points should be tallied.</p>
+
+				<h4>Blocking Attacks and Breaking Defenses</h4>
+				<p>When a player attacks, if his attacking card(s) beats the defending card(s), he break the defense otherwise the attack is blocked.</p>
+				<p>Attacking card(s) beat the defense card(s) if:</p>
+				<ul>
+					<li>there is one attack card and one defense card, and the attack card is greater than or equal to the rank of the defense card</li>
+					<li>there are two attack cards and one defense card</li>
+					<li>there are two attack cards and two defense cards, and the attack cards are greater than or equal to the rank of the defense cards</li>
+					<li>there are three attack cards and three or less defense cards.  If there is a single defense card, and the next defense card is a single, it beats them both.</li>
+					<li>there are four attack cards. It beats all cards up to (but not including) a royal.</li>
+				</ul>
+				<p>The defender must discard all defending cards if they are beaten. For example, if two attacking 6's contest two defending 5's, both defending 5's must be discarded.</p>
+
+				<h4>Capturing and Protecting Royals</h4>
+				<p class="page-break-after-print">Royals (Jack, Queen, and King) have a rank of 0.  In other words, any single attack card can beat a single royal, but the above rules still apply with royals.  When a royal is beat, it is captured.  If royals are used to attack, they are captured by the defending opponent.  Royals should be strongly defended as capturing and protecting royals gives points.  Place all captured royals in a pile face up next to your hand.</p>
+
+				<h4>Tallying a Round</h4>
+				<p>After a round is finished (all players have passed on their turns, someone has announced “done”, or a player runs out of cards) the points are tallied.</p>
+				<p>Points are given as follows:</p>
+				<ul>
+					<li>2 points for every King captured (i.e. if the player’s attack has beat a royal)</li>
+					<li>2 points for every Queen protected (i.e. if the player still has the card in his hand when the round is over)</li>
+					<li>All other royals are worth 1 point.</li>
+				</ul>
+				<p>Keep the score tallied on a scoresheet.</p>
+
+				<h4>After a Round and End Goal</h4>
+				<p>After a round is tallied, write down the total score for each player on a scoresheet.  The first player to reach the target score wins the game (or the highest score if more than one player reaches the target score).</p>
+				<ul>
+					<li>For two players, the target score is 21</li>
+					<li>For three players, the target score is 17</li>
+					<li>For four players, the target score is 14</li>
+				</ul>
+				<p>For a shorter game, have one or two rounds be a complete game.</p>
+				<p>If another round needs to be played, he who scored the least amount of points for that round gets to decide who goes first.  Begin again with the Fortifying Phase.  This time, the play moves counter-clockwise and the starting player attacks the person on his right.  This rotates each round.</p>
+				<h4>The Even Round (two player only)</h4>
+				<p>If there are two players, every other round should be played with the cards remaining in the deck.  Do not reshuffle the cards.</p>
+			</section>
+		</section>
+	</div>
+</body>
